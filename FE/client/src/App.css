@@ -27,10 +27,10 @@ header {
 }
     
   .logo-image {
-      width: 90px; /* increased width */
-      height: 90px; /*increased height */
-      border-radius: 50%; /* circular shape */
-      object-fit: cover; /*maintain aspect ratio */
+      width: 90px; 
+      height: 90px; 
+      border-radius: 50%; 
+      object-fit: cover;
     }
   .search-bar {
     display: flex;
@@ -69,29 +69,29 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-  .menu {
-    width: 100%;
-    margin-top: 40px !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    border-top: 2px solid #000;
-    padding-top: 30px;
-    padding-left: 0;
-    } 
-    .menu a {
-      color: #000;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 5px 10px;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
+.menu {
+  width: 100%;
+  margin-top: 40px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-top: 2px solid #000;
+  padding-top: 30px;
+  padding-left: 0;
+  } 
+  .menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
     
-    .menu a:hover {
-    background-color: var(--secondary-color);
-    color: #007bff;
-    }  
+.menu a:hover {
+  background-color: var(--secondary-color);
+  color: #007bff;
+}  
 .navbar {
     height: 136px;
     max-width: 1400px;
@@ -420,7 +420,7 @@ h3 {
 /*care connect section */
 
 .careconnect-section {
-  background-color: #e9e2cf;
+  background-color: var(--secondary-color);
   padding: 40px 60px; /* Reduced padding */
   text-align: center;
   border-radius: 10px;
@@ -432,8 +432,8 @@ h3 {
     }
     
     .careconnect-container h2 {
-    color: blue;
-    font-size: 26px; /* Reduced font size _/
+      color: var(--primary-color);
+      font-size: 26px; /* Reduced font size _/
     margin-bottom: 15px; /_ Reduced margin */
     text-align: center;
     font-weight: bold;
