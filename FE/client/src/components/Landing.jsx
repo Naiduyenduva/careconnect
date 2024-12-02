@@ -1,6 +1,6 @@
 import React from 'react'
 import Surgeries from './Surgeries'
-import CareSection from './careSection'
+import CareSection from './CareSection'
 import SpecialitiesSection from './SpecialitiesSection'
 import DoctorSection from './DoctorSection'
 import BookAppointment from './BookAppointment'
