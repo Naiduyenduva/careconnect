@@ -28,7 +28,7 @@ const Surgeries = () => {
         btnname : "Mole Removal"
     },
     {
-        image : "images/lipoma.jpg",
+        image : "https://shorturl.at/QTqK9",
         btnname : "Lipoma"
     },
     {
@@ -52,15 +52,15 @@ const Surgeries = () => {
         btnname : "Lasik"
     },
     {
-        image : "images/piles.jpg",
+        image : "https://shorturl.at/QTqK9",
         btnname : "Piles"
     },
     {
-        image : "images/fissure.jpg",
+        image : "https://shorturl.at/QTqK9",
         btnname : "Fissure"
     },
     {
-        image : "images/fistula.jpg",
+        image : "https://shorturl.at/QTqK9",
         btnname : "Fistula"
     },
     {
@@ -129,7 +129,7 @@ const Surgeries = () => {
     <>
         <div>
             <div className='surgeries-container'>
-                <h2>Receive expert care for over 50 advanced surgeries</h2>
+                <h2>Receive expert care for over 50+ advanced surgeries</h2>
                 <div className='surgeries-box'>
                     <div className='surgeries-grid'>
                         {

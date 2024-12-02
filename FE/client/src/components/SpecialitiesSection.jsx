@@ -81,22 +81,6 @@ const SpecialitiesSection = () => {
                 }
             </div>
         </section>
-
-
-        <section className='query'>
-        <h2>Why CareConnect?</h2>
-                <div className='q-services'>
-                    {
-                        whycareconnectarray.map((item1,index1)=>(
-
-                            <div className='service-item'>
-                                <h3>{item1.title}</h3>
-                                <p>{item1.description1}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-        </section>
     </>
   )
 }

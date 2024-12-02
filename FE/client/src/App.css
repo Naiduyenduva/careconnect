@@ -39,6 +39,8 @@ header {
   }
   
   .search-bar input[type="text"] {
+    width: 400px;
+    height: 30px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -52,6 +54,8 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 40px;
+    width: 120px;
   }
   
   .search-bar button:hover {
@@ -138,7 +142,7 @@ nav a {
 }
 .surgeries-grid {
     display: grid;
-    grid-template-columns: repeat(9, minmax(110px, 1fr));
+    grid-template-columns: repeat(10, minmax(100px, 1fr));
     gap: 15px;
     grid-auto-rows: 1fr;
     }
@@ -148,7 +152,7 @@ nav a {
     color: #fff;
     border: none;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: 10px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
@@ -161,8 +165,8 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 .surgery-item img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 60px;
     border-radius: 10px;
     }
 .care-section {
@@ -269,70 +273,7 @@ nav a {
       .specialty-text {
       flex: 1;
       }
-      .query h2 {
-        margin-top: 50px;
-        margin-left: 20px;
-      }
-
-      .q-services {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        max-width: 1200px;
-        margin: 30px 0 0 10px;
-        }
-
-        .q-services .service-item {
-            display: grid;
-            background-color: #fff;
-            height: 500px;
-            padding: 0px 20px 70px 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            width: 240px;
-            }
-          .q-services .service-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-          }
-          
-          .q-services .service-item h3 {
-            color: #2258f9;
-            margin-bottom: 10px;
-            font-size: 18px;
-          }
-          
-          .q-services .service-item p {
-          color: #000000;
-          margin-bottom: 20px;
-          font-size: 16px;
-          }
-
-    .service-item {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        height: 170px !important;
-    }
-.service-item h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-    text-align: left;
-}
-.service-item p {
-    font-size: 16px;
-    font-weight: bold; /* Added font-weight: bold */
-    color: #666;
-    margin-bottom: 0;
-    text-align: left;
-    line-height: 0.9;
-    
-}
+      
 .doctor-section-container {
     background-color: orange;
     padding: 50px 20px; /* Increased padding for the section */
