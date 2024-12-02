@@ -536,3 +536,59 @@ h3 {
 .social-links a:hover {
   color: #fdd835; /* Light yellow hover effect */
 }
+.email-form {
+  margin-top: 15px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: #ece7e1;
+  color:#000000;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-input::placeholder {
+  color: #171713;
+  opacity: 0.8;
+}
+
+.email-input:focus {
+  background-color: #eecbcb;
+  color: #000000;
+  border: 2px solid #fdd835;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.subscribe-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e5d3d3;
+  color: #FF8C00;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-button:hover {
+  background-color: #0079e3;
+  color:#000000;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.newsletter {
+  margin-right: 30px;
+}
+
