@@ -6,7 +6,6 @@ import DoctorSection from './DoctorSection'
 import BookAppointment from './BookAppointment'
 import Faq from './Faq'
 import Footer from './Footer'
-import Navbar from './Navbar'
 import Header from './Header'
 const Landing = () => {
   return (

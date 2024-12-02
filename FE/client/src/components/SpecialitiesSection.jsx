@@ -65,7 +65,7 @@ const SpecialitiesSection = () => {
     ]
   return (
     <>
-        <section className='specialities-section'>
+        <section className='specialties-section'>
         <h2>Find experts from 10+ specialties</h2>
             <div className='specialties-grid'>
                 {

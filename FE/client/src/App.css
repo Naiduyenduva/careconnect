@@ -85,16 +85,13 @@ nav a {
       font-weight: 500;
       padding: 5px 10px;
       border-radius: 5px;
-      margin-right: 10px;
+      margin-right: 10px;
     }
     
     .menu a:hover {
     background-color: var(--secondary-color);
     color: #007bff;
-    }
-      
-
-
+    }  
 .navbar {
     height: 136px;
     max-width: 1400px;
@@ -231,7 +228,7 @@ nav a {
 }
 .specialties-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 290px);
     gap: 20px;
 }
 .specialty-item {
@@ -242,6 +239,7 @@ nav a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-left: 20px;
     border: none;
     cursor: pointer;
     width: 270px; /* decreased width */
@@ -266,6 +264,10 @@ nav a {
       
       .specialty-text {
       flex: 1;
+      }
+      .query h2 {
+        margin-top: 100px;
+        margin-left: 20px;
       }
 
       .q-services {
