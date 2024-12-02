@@ -1,0 +1,19 @@
+.navbar {
+    height: 136px;
+    width: 1326px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: white;
+}
+.about {
+    height: 120px;
+    width: 700px;
+    background-color: #edd28d;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 350px;
+    text-align: center;
+    color: #222222;
+    padding-top: 10px;
+
+}
