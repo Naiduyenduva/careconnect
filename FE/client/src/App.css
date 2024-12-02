@@ -1,19 +1,591 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #fff7e6;
+  --light-orange: #ffe5b4;
+  --font-family: Arial, sans-serif;
+  --highlight-color: goldenrod;
+  }
+  body {
+    /* font-family: var(--font-family); */
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+.logo {
+  margin-left: 20px;
+}
+    
+  .logo-image {
+      width: 90px; /* increased width */
+      height: 90px; /*increased height */
+      border-radius: 50%; /* circular shape */
+      object-fit: cover; /*maintain aspect ratio */
+    }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  }
+    
+nav a {
+  margin: 0 15px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+  .menu {
+    width: 100%;
+    margin-top: 40px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-top: 2px solid #000;
+    padding-top: 30px;
+    padding-left: 0;
+    } 
+    .menu a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    
+    .menu a:hover {
+    background-color: var(--secondary-color);
+    color: #007bff;
+    }
+      
+
+
 .navbar {
     height: 136px;
-    width: 1326px;
-    border: 2px solid red;
+    max-width: 1400px;
     border-radius: 5px;
     background-color: white;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 .about {
     height: 120px;
     width: 700px;
     background-color: #edd28d;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 350px;
     text-align: center;
     color: #222222;
     padding-top: 10px;
 
+}
+.surgeries-container {
+    padding: 40px;
+    background-color: #edeae3;
+}
+.surgeries-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+.surgeries-box {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.surgeries-grid {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(110px, 1fr));
+    gap: 15px;
+    grid-auto-rows: 1fr;
+    }
+
+.surgery-btn {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    }
+.surgery-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+.surgery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+.care-section {
+    padding: 20px;
+    background-color: orange;
+    text-align: center;
+    }
+.care-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    }
+.care-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 130px !important;
+    /* Decreased height*/
+    /*Decreased width */
+   /* Adjusted height to match the "Book Consultation" button */
+  }
+  .right-image {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .service-text {
+    flex: 1;
+  }
+  .service-item h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  .service-item p {
+    color: #555;
+    margin: 0;
+  }
+  .service-item:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .service-item:not(button) {
+    height: 130px !important;
+}
+.specialties-section {
+    padding: 20px;
+    background-color: orange;
+    text-align: center;
+}
+.specialties-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-bottom: 40px;  /* increased padding-bottom to increase section height */
+}
+.specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.specialty-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    width: 270px; /* decreased width */
+    height: 100px; /* increased height */
+}
+.specialty-item img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+    }
+    .specialty-item h3 {
+      color: #007bff;
+      margin-bottom: 5px;
+      }
+      
+      .specialty-item p {
+      color: #555;
+      margin-bottom: 0;
+      }
+      
+      .specialty-text {
+      flex: 1;
+      }
+
+      .q-services {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        margin: 30px 0 0 10px;
+        }
+
+        .q-services .service-item {
+            display: grid;
+            background-color: #fff;
+            height: 500px;
+            padding: 0px 20px 70px 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 240px;
+            }
+          .q-services .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          }
+          
+          .q-services .service-item h3 {
+            color: #2258f9;
+            margin-bottom: 10px;
+            font-size: 18px;
+          }
+          
+          .q-services .service-item p {
+          color: #000000;
+          margin-bottom: 20px;
+          font-size: 16px;
+          }
+
+    .service-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        height: 170px !important;
+    }
+.service-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+.service-item p {
+    font-size: 16px;
+    font-weight: bold; /* Added font-weight: bold */
+    color: #666;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 0.9;
+    
+}
+.doctor-section-container {
+    background-color: orange;
+    padding: 50px 20px; /* Increased padding for the section */
+    border-radius: 10px;
+    position: relative;
+  }
+
+.doctor-cardss {
+    margin-top: 50px;
+}
+.doctor-section-title {
+    text-align: left; /* Left-aligned title */
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* Changed to black */
+    margin-bottom: 80px; /* Space between title and cards */
+    text-transform: uppercase;
+  }
+.doctor-section {
+    padding: 2px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6,205px);
+} 
+    .doctor-card {
+    width: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    position: relative;
+    margin: -60px auto 20px; /* Shifted image 10px more upward */
+    width: 120px;
+    height: 120px;
+    overflow: visible;
+  }
+  
+  .image-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 10px; /* Make it an inward square */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-container .experience {
+    position: absolute;
+    bottom: -10px; /* Align at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; /* Changed to white */
+    color: black; /* Added contrast for better readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+}
+h3 {
+    font-size: 18px;
+    margin: 20px 0 5px; /* Retained space above the name */
+  }
+
+ p{
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/*care connect section */
+
+.careconnect-section {
+  background-color: #e9e2cf;
+  padding: 40px 60px; /* Reduced padding */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .careconnect-container {
+    max-width: 700px; /* Reduced max-width */
+    margin: 0 auto;
+    }
+    
+    .careconnect-container h2 {
+    color: blue;
+    font-size: 26px; /* Reduced font size _/
+    margin-bottom: 15px; /_ Reduced margin */
+    text-align: center;
+    font-weight: bold;
+    }
+    .careconnect-icons {
+      margin-bottom: 10px;
+    }
+
+            
+    .appointment-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .appointment-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      
+      .form-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      }
+      
+      .form-row input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: calc(50% - 5px);
+      }
+      
+      .appointment-form button[type="submit"] {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        }
+        
+        .appointment-form button[type="submit"]:hover {
+        background-color: #0056b3;
+        }
+    
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+} 
+.faq-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: black;
+  text-align: left;
+}
+.faq-section h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+.faq-question {
+  cursor: pointer;
+}
+.footer {
+  margin-top: 30px;
+  background-color: #FF8C00;
+  color: #000000;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3, .footer-column h4 {
+  color:#000000;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color:#000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #fdd835; /* Light yellow hover effect */
+}
+.footer-bottom {
+  border-top: 1px solid #000000;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+.footer-links, .social-links {
+  margin: 10px 0;
+}
+
+.footer-links a, .social-links a {
+  color:#000000;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .social-links a:hover {
+  color: #fdd835; /* Light yellow hover effect */
+}
+
+.social-links a {
+  font-size: 20px; /* Icon size */
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #fdd835; /* Light yellow hover effect */
 }
