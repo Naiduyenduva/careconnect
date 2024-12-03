@@ -13,11 +13,14 @@ const SurgeryDetailPage = () => {
           <div key={surgery.id}>
             <h1><strong>{surgery.btnname}</strong></h1>
             <p>{surgery.description}</p>
+            <h2>Advantages</h2>
               {
                 surgery.advantages.map((item,index)=>(
-                  <ul key={index}>
-                    <li>{item}</li>
-                  </ul>
+                  <div>
+                    <ul key={index}>
+                      <li>{item}</li>
+                    </ul>
+                  </div>
                 ))
               }
           </div>
