@@ -591,4 +591,16 @@ h3 {
 .newsletter {
   margin-right: 30px;
 }
+.surgery-detailspage {
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+}
+.surgery-detailspage h1 {
+  text-align: center;
+  color: black;
+}
+.surgery-detailspage p {
+  font-size: 20px;
+}
 

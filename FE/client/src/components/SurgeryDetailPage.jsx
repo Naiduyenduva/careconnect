@@ -9,11 +9,19 @@ const SurgeryDetailPage = () => {
 
   return (
     <>
-    <div key={surgery.id}>
-      <h1>{surgery.id}</h1>
-      <h1>{surgery.btnname}</h1>
-      <div>SurgeryDetailPage</div>
-    </div>
+      <div className='surgery-detailspage'>
+          <div key={surgery.id}>
+            <h1><strong>{surgery.btnname}</strong></h1>
+            <p>{surgery.description}</p>
+              {
+                surgery.advantages.map((item,index)=>(
+                  <ul key={index}>
+                    <li>{item}</li>
+                  </ul>
+                ))
+              }
+          </div>
+      </div>
     </>
   )
 }
