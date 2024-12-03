@@ -54,11 +54,11 @@ const DoctorSection = () => {
     <div className='doctor-section'>
         {
             doctorsArray.map((item,index)=>(
-                <div className='doctor-cardss'>
+                <div className='doctor-cardss' key={index}>
                 <div className='doctor-card'>
                     <div className='image-container'>
                         <img src={item.image} alt={item.alternativetext} />
-                        <span class="experience">{item.spantext}</span>
+                        <span className="experience">{item.spantext}</span>
                     </div>
                     <h3>{item.doctorName}</h3>
                     <p>{item.doctorProfession}</p>

@@ -40,12 +40,12 @@ const Faq = () => {
 
   return (
     <>
-        <section class="faq-section">
+        <section className="faq-section">
             <h2>Frequently Asked Questions</h2>
             <div className='faq-container'>
                 {
                     faqArray.map((item,index)=>(
-                    <div className='faq-item'>
+                    <div className='faq-item' key={index}>
                         <details>
                         <summary className="faq-question">{item.summary}</summary>
                             <div className="faq-answer">

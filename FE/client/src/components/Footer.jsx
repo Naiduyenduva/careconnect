@@ -46,17 +46,17 @@ const Footer = () => {
                     <li><a href="#">Book Your Consultation</a></li>
                     </ul>
             </div>
-            <div class="footer-column newsletter">
+            <div className="footer-column newsletter">
                 <h4>Sign Up to our Newsletter</h4>
                 <p>Stay up to date with the latest news and articles.</p>
-                <form class="email-form">
-                <div class="email-container">
+                <form className="email-form">
+                <div className="email-container">
                     <input 
                     type="email" 
                     placeholder="Enter your email address" 
-                    class="email-input" 
+                    className="email-input" 
                     required={true} />
-                    <button type="submit" class="subscribe-button">Subscribe</button>
+                    <button type="submit" className="subscribe-button">Subscribe</button>
             </div>
             </form>
       </div>

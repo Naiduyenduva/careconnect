@@ -70,7 +70,7 @@ const SpecialitiesSection = () => {
             <div className='specialties-grid'>
                 {
                     specialitiesarray.map((item,index)=>(
-                        <div className='specialty-item'>
+                        <div className='specialty-item' key={index}>
                         <img src={item.image} alt={item.title} />
                             <div className ="specialty-text">
                                 <h3>{item.title}</h3>

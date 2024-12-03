@@ -53,7 +53,7 @@ const CareSection = () => {
             {
                 careSimplified.map((item,index)=>(
 
-                <div className="service-item">
+                <div className="service-item" key={index}>
                     <div className='service-text'>
                         <h3>{item.maintext}</h3>
                         <p>{item.paragraphtext}</p>

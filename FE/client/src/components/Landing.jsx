@@ -7,6 +7,7 @@ import BookAppointment from './BookAppointment'
 import Faq from './Faq'
 import Footer from './Footer'
 import Header from './Header'
+import SurgeryDetailPage from './SurgeryDetailPage'
 const Landing = () => {
   return (
     <>
